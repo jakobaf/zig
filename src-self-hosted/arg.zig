@@ -10,7 +10,7 @@ const HashMap = std.HashMap;
 fn trimStart(slice: []const u8, ch: u8) []const u8 {
     var i: usize = 0;
     for (slice) |b| {
-        if (b != '-') break;
+        if (b != ch) break;
         i += 1;
     }
 
